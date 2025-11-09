@@ -2,8 +2,8 @@
 @import '../../shared/styles/typography';
 
 .dashboard {
-  width: 100%;
   min-height: 100vh;
-  background-color: $secondary-background;
+  background-color: $primary-background;
   @include font-body;
+  padding: 0 2rem;
 }
