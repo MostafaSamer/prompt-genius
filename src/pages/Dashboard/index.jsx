@@ -1,10 +1,17 @@
+import { useNavigate } from 'react-router-dom';
 import styles from './style.module.scss';
+import { Header } from '../../shared/components';
 
 function Dashboard() {
+  const navigate = useNavigate();
+
+  const handleNewPrompt = () => {
+    navigate('/prompt');
+  };
+
   return (
     <div className={styles.dashboard}>
-      <h1>Dashboard</h1>
-      <p>Welcome to the Dashboard page</p>
+      <Header onNewPrompt={handleNewPrompt} />
     </div>
   );
 }

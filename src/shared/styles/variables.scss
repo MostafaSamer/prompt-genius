@@ -1,15 +1,18 @@
 // Primary Palette
-$primary-background: #FFFFFF; // White
-$primary-text: #1F2937; // Cool Gray 800
-$primary-accent: #3B82F6; // Blue 500
-$primary-accent-hover: #2563EB; // Blue 600
+$primary-background: #1a1a1a; // Dark background
+$primary-text: #FFFFFF; // White text
+$primary-accent: #9333ea; // Purple accent (buttons)
+$primary-accent-hover: #7e22ce; // Purple hover
 
 // Secondary Palette
-$secondary-background: #F9FAFB; // Cool Gray 50
-$secondary-text: #6B7280; // Cool Gray 500
-$border-color: #E5E7EB; // Cool Gray 200
+$secondary-background: #000000; // Black background
+$secondary-text: rgba(255, 255, 255, 0.7); // Light gray text
+$border-color: rgba(255, 255, 255, 0.1); // Subtle border
 
 // Action Colors
 $delete-action: #EF4444; // Red 500
 $delete-action-hover: #DC2626; // Red 600
+
+// Additional Colors
+$avatar-background: #f5f5f5; // Avatar placeholder
 

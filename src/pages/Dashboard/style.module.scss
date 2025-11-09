@@ -2,23 +2,8 @@
 @import '../../shared/styles/typography';
 
 .dashboard {
-  padding: 2rem;
-  background-color: $primary-background;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $secondary-background;
   @include font-body;
-  
-  h1, h2, h3, h4, h5, h6 {
-    @include font-heading;
-    margin-bottom: 1rem;
-    color: $primary-text;
-  }
-  
-  p, label, span {
-    @include font-body;
-    color: $secondary-text;
-  }
-  
-  button {
-    @include font-button;
-  }
 }
-
