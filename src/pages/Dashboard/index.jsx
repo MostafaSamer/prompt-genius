@@ -83,7 +83,6 @@ function Dashboard() {
             name="search"
             value=""
             placeholder="Filter prompts by name or tag"
-            disabled
           />
         </div>
 
