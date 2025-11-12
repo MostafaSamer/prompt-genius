@@ -10,60 +10,59 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
 
-.label {
-  @include font-body;
-  color: $primary-text;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
+  .label {
+    @include font-body;
+    color: $primary-text;
+    font-size: 0.875rem;
+    font-weight: 500;
 
-.required {
-  color: $delete-action;
-  margin-left: 0.25rem;
-}
-
-.input {
-  @include font-body;
-  width: 100%;
-  padding: 0.75rem;
-  background-color: $secondary-background;
-  border: 1px solid $border-color;
-  border-radius: 0.375rem;
-  color: $primary-text;
-  font-size: 0.875rem;
-  transition: border-color 0.2s ease, outline 0.2s ease;
-
-  &::placeholder {
-    color: $secondary-text;
+    .required {
+      color: $delete-action;
+      margin-left: 0.25rem;
+    }
   }
 
-  &:focus {
-    outline: none;
-    border-color: $primary-accent;
+  .input {
+    @include font-body;
+    padding: 0.75rem;
+    background-color: $secondary-background;
+    border: 1px solid $border-color;
+    border-radius: 0.375rem;
+    color: $primary-text;
+    font-size: 0.875rem;
+    transition: border-color 0.2s ease, outline 0.2s ease;
+
+    &::placeholder {
+      color: $secondary-text;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primary-accent;
+    }
+
+    &:hover:not(:focus) {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &.error {
+      border-color: $delete-action;
+    }
   }
 
-  &:hover:not(:focus) {
-    border-color: rgba(255, 255, 255, 0.2);
+  .textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: $font-family;
+    line-height: 1.5;
   }
 
-  &.error {
-    border-color: $delete-action;
+  .errorMessage {
+    @include font-body;
+    color: $delete-action;
+    font-size: 0.75rem;
+    margin-top: -0.25rem;
   }
-}
-
-.textarea {
-  resize: vertical;
-  min-height: 100px;
-  font-family: $font-family;
-  line-height: 1.5;
-}
-
-.errorMessage {
-  @include font-body;
-  color: $delete-action;
-  font-size: 0.75rem;
-  margin-top: -0.25rem;
 }
 
