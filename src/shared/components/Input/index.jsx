@@ -10,6 +10,7 @@ function Input({
   error,
   required = false,
   rows = 4,
+  disabled = false,
 }) {
   const inputId = `input-${name}`;
 
@@ -27,6 +28,7 @@ function Input({
           onChange={onChange}
           placeholder={placeholder}
           rows={rows}
+          disabled={disabled}
           className={`${styles.input} ${styles.textarea} ${error ? styles.error : ''}`}
           required={required}
         />
@@ -38,6 +40,7 @@ function Input({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
+          disabled={disabled}
           className={`${styles.input} ${error ? styles.error : ''}`}
           required={required}
         />
