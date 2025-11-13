@@ -13,7 +13,6 @@ function App() {
         <Route path="/" element={<BlackLayout><Dashboard /></BlackLayout>} />
         <Route path="/dashboard" element={<BlackLayout><Dashboard /></BlackLayout>} />
         <Route path="/settings" element={<SideMenuLayout><Settings /></SideMenuLayout>} />
-        <Route path="/prompt" element={<BlackLayout><Prompt /></BlackLayout>} />
         <Route path="/prompt/:id" element={<BlackLayout><Prompt /></BlackLayout>} />
       </Routes>
     </BrowserRouter>
