@@ -1,0 +1,12 @@
+@import '../../../shared/styles/variables';
+@import '../../../shared/styles/typography';
+
+.dropdown-styles {
+  --border-color: #{$border-color};
+  --primary-bg: #{$primary-background};
+  --secondary-bg: #{$secondary-background};
+  --primary-text: #{$primary-text};
+  --secondary-text: #{$secondary-text};
+  --hover-bg: #3b82f6;
+  --hover-option-bg: #60a5fa;
+}
