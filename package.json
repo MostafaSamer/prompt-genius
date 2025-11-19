@@ -13,9 +13,12 @@
     "test:coverage": "vitest --coverage"
   },
   "dependencies": {
+    "@mantine/hooks": "^8.3.7",
+    "lucide-react": "^0.554.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.5"
+    "react-router-dom": "^7.9.5",
+    "react-select": "^5.10.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

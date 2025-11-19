@@ -1,11 +1,17 @@
 @import '../../shared/styles/variables';
 @import '../../shared/styles/typography';
 
-.prompt {
-  padding: 2rem;
+.main_color{
   background-color: $primary-background;
-  @include font-body;
-  
+
+}
+.prompt {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  @include font-body;  
   h1, h2, h3, h4, h5, h6 {
     @include font-heading;
     margin-bottom: 1rem;
@@ -19,6 +25,32 @@
   
   button {
     @include font-button;
+  }
+  .data_view{
+    background-color: $secondary-background;
+    border: 1px solid $border-color;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    height:auto;
+  }
+  .box{
+    align-self: flex-start;
+    background-color: $box-background;
+    border: 1px solid $border-color;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    height:auto;
+  }
+  .box_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box_special{
+     @extend .data_view; 
+     min-height: 300px;
   }
 }
 
