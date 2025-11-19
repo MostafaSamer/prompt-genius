@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss' ;
+@import '../../styles/typography.scss' ;
+header{
+
+    .Header_Prompt{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        color: $primary-text;
+        align-items: center;
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .Logo{
+            display: flex;
+            gap: 10px;
+            padding-right: 20px;
+            span{
+                color: $text-copy-button;
+            }
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .copy{
+            padding: 10px;
+            background-color: $copy-background;
+            border-radius: 10px;
+            width: 100px;
+             text-align: center;
+             color: $text-copy-button;
+             span{
+                padding-right: 5px;
+             }
+        }
+        .generate{
+             padding: 10px;
+            background-color: $ai-color;
+            border-radius: 10px;
+             text-align: center;
+             color: $primary-text;
+             span{
+                padding-right: 5px;
+             }
+        }
+        
+        .Line {
+            width: 100vw;
+            height: 2.5rem;
+            border-radius: 50%;
+            background-color: $avatar-background;
+            flex-shrink: 0;
+          }
+    }
+    hr{
+        font-size: 1px;
+    }
+}
